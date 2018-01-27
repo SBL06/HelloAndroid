@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androidlearning.sbl.helloandroid.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/noMargin"
+        android:id="@+id/img"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/Margin"
+        android:layout_marginTop="@dimen/smallMargin">
+
+ <TextView
+    style="@style/text"
+    android:text="@string/udacity" />
+
+        <TextView
+            style="@style/text"
+            android:text="@string/adress"/>
+        <TextView
+            style="@style/text"
+            android:text="@string/city"/>
+        <TextView
+            style="@style/text"
+            android:text="@string/phone"/>
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visit"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/smallMargin"
+            android:onClick="visitSite"/>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
